@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Illustration - Alison Xiong</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><a href="index.html">Alison Xiong</a></h1>
+        </header>
+        <main class="portfolio-page">
+            <h2>Personal Illustration</h2>
+            <div class="portfolio-grid">
+                <!-- Add your images and captions here -->
+                <div class="portfolio-item">
+                    <img src="images/your-illustration.jpg" alt="Illustration description">
+                    <p class="caption">Caption for your work</p>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
