@@ -17,10 +17,19 @@ body {
 }
 
 h1 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+    font-family: Helvetica;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    margin: 0.6em 0;
+    /* margin-bottom: 1rem; */
     font-weight: normal;
+    text-align: center;
 }
+
+#header {
+    padding: 2em 0 1em 0;
+}
+
 
 .content-wrapper {
     display: flex;
@@ -67,23 +76,27 @@ p {
 }
 
 .portfolio-sections {
-    margin-top: 3rem;
+    padding-top: 2rem;
+    margin-bottom: 0.75em;
+    font-family: Helvetica;
+    font-style: italic;
     display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
 }
 
 .portfolio-link {
-    font-size: 1.2rem;
+    font-family: Helvetica;
+    font-size: 1rem;
     color: #D35400;
     text-decoration: none;
-    padding: 1rem;
     border-radius: 4px;
     transition: background-color 0.3s ease;
 }
 
 .portfolio-link:hover {
-    background-color: rgba(211, 84, 0, 0.1);
+    color: #d35400b4;
 }
 
 .container {
@@ -93,6 +106,20 @@ p {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+img.center {
+    display: block;
+    width: 480px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 main {
