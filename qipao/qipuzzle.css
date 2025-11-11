@@ -1,7 +1,7 @@
 .puzzle-container {
     position: relative;
-    width: 600px;
-    height: 600px;
+    width: 720px;
+    height: 900px;
     margin: 2rem auto;
 }
 
@@ -15,13 +15,14 @@
 }
 
 .puzzle-piece {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    background-size: cover;
-    cursor: move;
+    /* position: absolute; */
+    width: 240px;
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     z-index: 2;
-    transition: all 0.2s ease;
+    /* transition: all 0.2s ease; */
 }
 
 .puzzle-piece.dragging {

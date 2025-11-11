@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const container = document.querySelector('.pieces-container');
-    const gridSize = 200;
+    const gridWidth = 200;
+    const gridHeight = 300;
     const totalPieces = 9;
     
     // Add grid background
@@ -24,33 +25,36 @@ document.addEventListener('DOMContentLoaded', () => {
             // Position one piece in correct grid position
             const row = Math.floor((i-1) / 3);
             const col = (i-1) % 3;
-            piece.style.left = `${col * gridSize + (window.innerWidth/2 - 300)}px`;
-            piece.style.top = `${row * gridSize}px`;
+            piece.style.left = `${col * gridWidth + (window.innerWidth/2 - 300)}px`;
+            piece.style.top = `${row * gridHeight}px`;
         } else {
             // Position other pieces on sides
             const isLeft = i % 2 === 0;
-            const offset = Math.floor(i/2) * (gridSize + 20);
-            piece.style.left = isLeft ? 
-                `${window.innerWidth/2 - 500}px` : 
-                `${window.innerWidth/2 + 300}px`;
+            const offset = Math.floor(i/2) * (gridWidth + 20);
+            piece.style.left = isLeft ? '-220px' : '620px';
             piece.style.top = `${offset}px`;
         }
+
+        piece.onmousedown = function(event) {
+            let shiftX = event.clientX - piece.getBoundingClientRect().left;
+            let shiftY = event.clientY - piece.getBoundingClientRect().top;
         
-        piece.addEventListener('dragstart', dragStart);
-        piece.addEventListener('dragend', dragEnd);
-        container.appendChild(piece);
-    }
+            function moveAt (pageX, pageY) {
+                piece.style.left = pageX - shiftX + 'px';
+                piece.style.top = pageY - shiftY + 'px';
+            }
+            function onMouseMove(event) {
+                moveAt(event.pageX, event.pageY);
+            }
+            document.addEventListener ('mousemove', onMouseMove);
 
-    function dragStart(e) {
-        this.classList.add('dragging');
-    }
+            piece.onmouseup = function() {
+                document.removeEventListener('mousemove', onMouseMove);
+                piece.onmouseup = null;
+            };
+        };
 
-    function dragEnd(e) {
-        this.classList.remove('dragging');
-        const rect = this.getBoundingClientRect();
-        const x = Math.round(rect.left / gridSize) * gridSize;
-        const y = Math.round(rect.top / gridSize) * gridSize;
-        this.style.left = x + 'px';
-        this.style.top = y + 'px';
-    }
-});
+        piece.ondragstart = function() {
+            return false;
+          };
+    };
