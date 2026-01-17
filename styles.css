@@ -242,7 +242,6 @@ main {
 }
 
 .gallery-item {
-    /* width: 100%; */
     margin: 0 auto 2em auto;
     display: flex;
     justify-content: center;
@@ -250,8 +249,6 @@ main {
 .gallery-item img {
     display: block;
     max-width: 650px;
-    /* width: auto; use this and next line for skinnier verticals*/
-    /* height: 500px; */
     justify-content: center;
 }
 
@@ -265,4 +262,19 @@ main {
   .portfolio-gallery {
     padding: 0 0.5em;
   }
+}
+
+.photos-gallery-container {
+    display: grid; /* Enables CSS Grid */
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal-width columns */
+    gap: 10px; /* Adds space between grid items */
+    max-width: 1200px; /*Optional: Sets a max width for the gallery */
+    margin: 0 auto; /* Optional: Centers the gallery on the page */
+}
+
+.photos-gallery-item img {
+    width: 100%; /* Images fill their container width */
+    height: 200px; /* Optional: Sets a fixed height for all images */
+    object-fit: cover; /* Ensures images cover the area without distortion */
+    display: block; /* Removes default inline image spacing */
 }
