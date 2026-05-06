@@ -8,7 +8,11 @@ const images = [
     { src: "images/compressed/hometown-thumb.JPG",       alt: "Hometown Twice Removed" },
     { src: "images/compressed/emma-thumb.JPG",       alt: "Emma Color Study" },
     { src: "images/compressed/peach-thumb.jpg",       alt: "Color Study B" },
+    { src: "images/compressed/kirtapink-1-thumb.jpeg",       alt: "Kirtana Expression 1" },
+    { src: "images/compressed/kirtapink-2-thumb.jpeg",       alt: "Kirtana Expression 2" },
+    { src: "images/compressed/innout-fish-thumb.png",       alt: "In-N-Out" },
     { src: "images/crowbird figure.png",       alt: "crowbird figure" },
+    { src: "images/compressed/leslie-willard-thumb.jpeg",       alt: "Leslie Sunning" },
 
 ];
 
@@ -21,7 +25,6 @@ images.forEach((image, i) => {
     item.innerHTML = `<img src="${image.src}" alt="${image.alt}" loading="lazy">`;
     gallery.appendChild(item);
 });
-
 
 
 const lightbox = document.createElement('div');
