@@ -10,7 +10,8 @@ const images = [
     { src: "images/compressed/peach-thumb.jpg",       alt: "Color Study B" },
     { src: "images/compressed/kirtapink-1-thumb.jpeg",       alt: "Kirtana Expression 1" },
     { src: "images/compressed/kirtapink-2-thumb.jpeg",       alt: "Kirtana Expression 2" },
-    { src: "images/compressed/innout-fish-thumb.png",       alt: "In-N-Out" },
+    {src: "images/olga.jpg",       alt: "Olga Color Study" },
+    { src: "images/compressed/innout-darker40-thumb.png",       alt: "In-N-Out" },
     { src: "images/crowbird figure.png",       alt: "crowbird figure" },
     { src: "images/compressed/leslie-willard-thumb.jpeg",       alt: "Leslie Sunning" },
 
