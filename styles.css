@@ -1,3 +1,7 @@
+/* ====================================================================
+   GENERAL
+   ==================================================================== */
+
 body {
     margin: 0;
     padding: 0;
@@ -62,7 +66,6 @@ h2 {
 }
 
 p {
-    /* color: #D35400; */
     font-size: 1.2rem;
     line-height: 1.6;
     margin: 0;
@@ -111,6 +114,14 @@ p {
     color: #d35400b4;
 }
 
+hr {
+  border: none;            /* Removes default browser styling */
+  height: 1px;             /* Thickness of the line */
+  background-color: #e0e0e0;  /* Color of the line */
+  width: 100%;             /* Stretches across the full container */
+  margin: 20px 0;          /* Adds space above and below the line */
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -140,8 +151,24 @@ main {
     flex: 1;
 }
 
+.title-container {
+  display: flex;
+  justify-content: center; /* Centers the whole group on the page */
+  align-items: center;     /* Aligns icons and text vertically */
+  gap: 15px;               /* Adds equal space between images and text */
+}
+
+.title-icon {
+  width: 100px;             /* Adjust size of the small images */
+  height: auto;            /* Maintains aspect ratio */
+}
+
+/* ====================================================================
+   ABOUT
+   ==================================================================== */
 .about-section {
     display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 40px;
     padding: 60px 40px;
@@ -153,7 +180,6 @@ main {
 .headshot {
     max-width: 400px;
     max-height: 400px;
-    flex-direction: row;
     width: 100%;
     height: auto;
 }
@@ -167,7 +193,7 @@ main {
 .about-text {
     max-width: 400px;
     width: 100%;
-    flex: 1 1 400px
+    flex: 1 1 400px;
 }
 
 .about-text p{
@@ -176,14 +202,20 @@ main {
     line-height: 1.6;
 }
 
-@media screen and (max-width: 768px) {
+.desktop-only {
+  display: block;
+}
+
+@media (max-width: 768px) {
     .about-section {
         flex-direction: column;
         padding: 40px 20px;
     }
-    
     .headshot {
         max-width: 300px;
+    }
+    .desktop-only {
+        display: none;
     }
 }
 
@@ -209,6 +241,9 @@ main {
   }
 }
 
+/* ====================================================================
+   PORTFOLIO GALLERIES
+   ==================================================================== */
 @media (max-width: 800px) {
   .gallery-grid {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -256,98 +291,4 @@ main {
     .gallery-item {
         margin-bottom: 16px;
     }
-}
-
-
-hr {
-  border: none;            /* Removes default browser styling */
-  height: 1px;             /* Thickness of the line */
-  background-color: #e0e0e0;  /* Color of the line */
-  width: 100%;             /* Stretches across the full container */
-  margin: 20px 0;          /* Adds space above and below the line */
-}
-
-#lightbox {
-    display: none;
-    position: fixed;
-    inset: 0;
-    z-index: 1000;
-    align-items: center;
-    justify-content: center;
-}
-
-#lightbox.open {
-    display: flex;
-}
-
-#lightbox-backdrop {
-    position: absolute;
-    inset: 0;
-    background: rgba(255, 255, 255, 0.92);
-    animation: fadeIn 0.3s ease;
-}
-
-#lightbox-content {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 90vw;
-    max-height: 90vh;
-    animation: riseIn 0.35s cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-#lightbox-img {
-    max-width: 90vw;
-    max-height: 80vh;
-    object-fit: contain;
-    display: block;
-}
-
-#lightbox-caption {
-    margin-top: 12px;
-    font-size: 0.9rem;
-    color: #888;
-    font-style: italic;
-}
-
-#lightbox-close {
-    position: absolute;
-    top: -36px;
-    right: 0;
-    background: none;
-    border: none;
-    font-size: 1.6rem;
-    cursor: pointer;
-    color: #555;
-    line-height: 1;
-    padding: 0;
-}
-
-#lightbox-close:hover {
-    color: #000;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-@keyframes riseIn {
-    from { opacity: 0; transform: translateY(16px); }
-    to   { opacity: 1; transform: translateY(0); }
-}
-
-
-.title-container {
-  display: flex;
-  justify-content: center; /* Centers the whole group on the page */
-  align-items: center;     /* Aligns icons and text vertically */
-  gap: 15px;               /* Adds equal space between images and text */
-}
-
-.title-icon {
-  width: 100px;             /* Adjust size of the small images */
-  height: auto;            /* Maintains aspect ratio */
 }
