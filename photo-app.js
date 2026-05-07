@@ -127,9 +127,6 @@ document.getElementById('lightbox-backdrop').addEventListener('click', closeLigh
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
 
 
-
-
-
 window.addEventListener('load', () => {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {

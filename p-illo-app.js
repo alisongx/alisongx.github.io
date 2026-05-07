@@ -1,19 +1,20 @@
 const images = [
-    { src: "images/compressed/getting-older-thumb.jpg", alt: "We're Getting Older" },
-    { src: "images/compressed/arranma-thumb.jpg",       alt: "ArranMa" },
-    { src: "images/compressed/hdsleep-thumb.jpg",       alt: "Sleep on HD" },
-    { src: "images/compressed/paperdoll-kyla-thumb.jpg",alt: "Kyla in Out of Our Minds" },
-    { src: "images/compressed/pavlova-thumb.jpg",       alt: "Pavlova Ballerinas" },
-    { src: "images/compressed/gardeners-thumb.JPG",       alt: "Gardener's Hands" },
-    { src: "images/compressed/hometown-thumb.JPG",       alt: "Hometown Twice Removed" },
-    { src: "images/compressed/emma-thumb.JPG",       alt: "Emma Color Study" },
-    { src: "images/compressed/peach-thumb.jpg",       alt: "Color Study B" },
-    { src: "images/compressed/kirtapink-1-thumb.jpeg",       alt: "Kirtana Expression 1" },
-    { src: "images/compressed/kirtapink-2-thumb.jpeg",       alt: "Kirtana Expression 2" },
-    {src: "images/olga.jpg",       alt: "Olga Color Study" },
-    { src: "images/compressed/innout-darker40-thumb.png",       alt: "In-N-Out" },
-    { src: "images/crowbird figure.png",       alt: "crowbird figure" },
-    { src: "images/compressed/leslie-willard-thumb.jpeg",       alt: "Leslie Sunning" },
+    { src: "images/compressed/getting-older-thumb.jpg", alt: "We're Getting Older, 2023" },
+    { src: "images/compressed/hdsleep-thumb.jpg",       alt: "Sleep on HD, 2024" },
+    { src: "images/compressed/pavlova-thumb.jpg",       alt: "Pavlova Ballerinas, 2024" },
+    { src: "images/compressed/emma-thumb.JPG",       alt: "Emma Color Study, 2022" },
+    { src: "images/compressed/arranma-thumb.jpg",       alt: "ArranMa, 2025" },
+    { src: "images/compressed/peach-thumb.jpg",       alt: "Color Study B, 2023" },
+    { src: "images/compressed/kirtapink-1-thumb.jpeg",       alt: "Kirtana Expression 1, 2025" },
+    { src: "images/compressed/kirtapink-2-thumb.jpeg",       alt: "Kirtana Expression 2, 2025" },
+    { src: "images/compressed/paperdoll-kyla-thumb.jpg",alt: "Kyla in Out of Our Minds, 2024" },
+    { src: "images/olga.jpg",       alt: "Olga Color Study, 2022" },
+    { src: "images/compressed/innout-darker40-thumb.png",       alt: "In-N-Out, 2025" },
+    // { src: "images/crowbird figure.png",       alt: "crowbird figure" },
+    { src: "images/compressed/hometown-thumb.JPG",       alt: "Hometown Twice Removed, 20" },
+    { src: "images/compressed/gardeners-thumb.JPG",       alt: "Gardener's Hands, 2022" },
+    { src: "images/edited-IMG_8811 2.jpg",       alt: "Color Study A, 2023" },
+    { src: "images/compressed/leslie-willard-thumb.jpeg",       alt: "Leslie Sunning, 2025" },
 
 ];
 
@@ -27,7 +28,7 @@ images.forEach((image, i) => {
     gallery.appendChild(item);
 });
 
-
+// ── Lightbox ──────────────────────────────────────────────────
 const lightbox = document.createElement('div');
 lightbox.id = 'lightbox';
 lightbox.innerHTML = `
@@ -58,9 +59,7 @@ document.getElementById('lightbox-backdrop').addEventListener('click', closeLigh
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
 
 
-
-
-
+// ── scroll anim ──────────────────────────────────────────────────
 window.addEventListener('load', () => {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
