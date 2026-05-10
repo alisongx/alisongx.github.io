@@ -109,11 +109,11 @@ const images = [
 
 ];
 
-// ── map each filename to its color folder(s) ──
+// ── map each filename to its color folders ──
 const COLOR_MAP = {
   'IMG_0642.JPG': 'red',   'IMG_0875.JPG': 'red',   'IMG_0906.JPG': 'red',
   'IMG_2974.JPG': 'red',   'IMG_2985.JPG': 'red',   'IMG_3078.JPG': 'red',
-  'IMG_3150.JPG': 'red',   'IMG_9897.JPG': 'red',   'IMG_9904.JPG': 'red',
+  'IMG_3150.JPG': 'red',   'IMG_9897.JPG': 'red',   'IMG_9904.JPG': 'black',
 
   'IMG_0572.JPG': 'black', 'IMG_0650.JPG': 'black', 'IMG_2640.JPG': 'white',
   'IMG_2645.JPG': 'black', 'IMG_3021.JPG': 'black', 'IMG_3071.JPG': 'black',
@@ -159,6 +159,47 @@ const COLOR_MAP = {
   'IMG_2653.JPG': 'white', 'IMG_4203.JPG': 'yellow',
 };
 
+// dimensions of all photos so space reserved b4 loading
+const DIMS = {
+  'IMG_0572.JPG': [1512,1002], 'IMG_0637.JPG': [1002,1512], 'IMG_0642.JPG': [1002,1512],
+  'IMG_0650.JPG': [1002,1512], 'IMG_0692.JPG': [1512,1002], 'IMG_0847.JPG': [1512,1002],
+  'IMG_0854.JPG': [1458,1002], 'IMG_0871.JPG': [1512,1002], 'IMG_0875.JPG': [1512,1002],
+  'IMG_0876.JPG': [1512,1002], 'IMG_0877.JPG': [1512,1002], 'IMG_0881.JPG': [1512,1002],
+  'IMG_0888.JPG': [1512,1002], 'IMG_0906.JPG': [1002,1512], 'IMG_2619.JPG': [1512,1002],
+  'IMG_2622.JPG': [1512,1002], 'IMG_2623.JPG': [1512,1002], 'IMG_2629.JPG': [1002,1512],
+  'IMG_2635.JPG': [1512,1002], 'IMG_2637.JPG': [1512,1002], 'IMG_2640.JPG': [1512,1002],
+  'IMG_2643.JPG': [1512,1002], 'IMG_2645.JPG': [1512,1002], 'IMG_2647.JPG': [1512,1002],
+  'IMG_2651.JPG': [1351,895],  'IMG_2653.JPG': [1512,1002], 'IMG_2655.JPG': [1477,979],
+  'IMG_2684.JPG': [1512,1002], 'IMG_2974.JPG': [1002,1512], 'IMG_2977.JPG': [1424,945],
+  'IMG_2985.JPG': [1512,1002], 'IMG_3021.JPG': [1512,1002], 'IMG_3024.JPG': [1002,1512],
+  'IMG_3027.JPG': [1002,1512], 'IMG_3038.JPG': [1512,1002], 'IMG_3071.JPG': [1512,1002],
+  'IMG_3078.JPG': [1512,1002], 'IMG_3086.JPG': [3067,2033], 'IMG_3087.JPG': [3130,2075],
+  'IMG_3100.JPG': [3130,2075], 'IMG_3117.JPG': [3130,2075], 'IMG_3119.JPG': [3130,2075],
+  'IMG_3121.JPG': [3130,2075], 'IMG_3135.JPG': [3130,2075], 'IMG_3150.JPG': [3130,2075],
+  'IMG_3157.JPG': [3130,2075], 'IMG_3175.JPG': [3130,2075], 'IMG_3177.JPG': [3130,2075],
+  'IMG_3490.JPG': [1512,1002], 'IMG_3527.JPG': [1512,1002], 'IMG_3528.JPG': [1512,1002],
+  'IMG_4201.JPG': [1002,1512], 'IMG_4203.JPG': [1512,1002], 'IMG_4214.JPG': [1512,1002],
+  'IMG_4219.JPG': [1512,1002], 'IMG_4221.JPG': [1002,1512], 'IMG_4226.JPG': [1512,1002],
+  'IMG_4227.JPG': [1512,1002], 'IMG_4229.JPG': [1512,1002], 'IMG_4298.JPG': [1512,1002],
+  'IMG_4299.JPG': [1323,876],  'IMG_5122.JPG': [1002,1512], 'IMG_5135.JPG': [1512,1002],
+  'IMG_5160.JPG': [1512,1002], 'IMG_5172.JPG': [1002,1512], 'IMG_6022.JPG': [1512,1002],
+  'IMG_6033.JPG': [1512,1002], 'IMG_6054.JPG': [1512,1002], 'IMG_9802.JPG': [1512,1002],
+  'IMG_9859.JPG': [1512,1002], 'IMG_9862.JPG': [1512,1002], 'IMG_9867.JPG': [1512,1002],
+  'IMG_9887.JPG': [964,1455],  'IMG_9893.JPG': [1002,1512], 'IMG_9894.JPG': [1002,1512],
+  'IMG_9897.JPG': [1469,972],  'IMG_9898.JPG': [1512,1002], 'IMG_9901.JPG': [1002,1512],
+  'IMG_9904.JPG': [1512,1002], 'IMG_9906.JPG': [1002,1512],
+  'R1-08627-0005.JPG': [2432,3637], 'R1-08627-0022.JPG': [3637,2432],
+  'R1-08627-0028.JPG': [3637,2432], 'R1-08627-0032.JPG': [2432,3637],
+  'R1-08627-0033.JPG': [3637,2432], 'R1-08627-0034.JPG': [2432,3637],
+  'R1-08627-0035.JPG': [3637,2432], 'R1-08627-0036.JPG': [2432,3637],
+  'R1-08628-0002.JPG': [2020,1350], 'R1-08628-0003.JPG': [3637,2432],
+  'R1-08628-0004.JPG': [2432,3637], 'R1-08628-0005.JPG': [2432,3637],
+  'R1-08628-0026.JPG': [3637,2432], 'R1-08628-0028.JPG': [3637,2432],
+  'R1-08629-008A.JPG': [2432,3637], 'R1-08629-013A.JPG': [2432,3637],
+  'R1-08629-016A.JPG': [2432,3637], 'R1-08629-019A.JPG': [3637,2432],
+  'R1-08629-020A.JPG': [2432,3637],
+};
+
 // ── build gallery items from a list of image objects ──
 function renderItems(list) {
   const gallery = document.querySelector('.portfolio-gallery');
@@ -168,7 +209,10 @@ function renderItems(list) {
     const item = document.createElement('div');
     item.className = 'gallery-item';
     item.dataset.delay = (i % 3) * 80;
-    item.innerHTML = `<img src="${image.src}" alt="${image.alt}" loading="lazy">`;
+    const filename = image.src.split('/').pop();
+    const dims = DIMS[filename];
+    const sizeAttrs = dims ? ` width="${dims[0]}" height="${dims[1]}"` : '';
+    item.innerHTML = `<img src="${image.src}" alt="${image.alt}"${sizeAttrs} loading="lazy">`;
     gallery.appendChild(item);
   });
   requestAnimationFrame(observeItems);
