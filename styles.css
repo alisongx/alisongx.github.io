@@ -440,3 +440,83 @@ main {
     from { opacity: 0; transform: translateY(12px); }
     to   { opacity: 1; transform: translateY(0); }
 }
+
+
+/* ── HUE ─────────────────────────────────────────────────── */
+.color-selector {
+  margin: 1.5rem auto 2rem;
+  max-width: 680px;
+  padding: 0 1rem;
+}
+
+.color-bar-wrap {
+  position: relative;
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.color-bar-img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  pointer-events: none;
+  user-select: none;
+}
+
+.color-zones {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 9.5%;
+  display: flex;
+}
+
+.zone {
+  flex: 1;
+  background: var(--c, #888);
+  opacity: 0.55;
+  border: none;
+  border-right: 1px solid rgba(255,255,255,0.15);
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.15s;
+  padding: 0;
+  position: relative;
+}
+
+.zone:last-child { border-right: none; }
+
+/* thin colored underline*/
+.zone::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--c, #888);
+  filter: brightness(1.6);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.zone:hover {
+  opacity: 0.78;
+}
+
+.zone:hover::after {
+  opacity: 1;
+}
+
+.zone.active {
+  opacity: 0.88;
+  transform: scaleY(1.25);
+  transform-origin: bottom;
+}
+
+.zone.active::after {
+  opacity: 1;
+  height: 4px;
+}
