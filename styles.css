@@ -452,7 +452,7 @@ main {
 .color-bar-wrap {
   position: relative;
   width: 100%;
-  border-radius: 6px;
+  /* border-radius: 6px; */
   overflow: hidden;
   line-height: 0;
 }
