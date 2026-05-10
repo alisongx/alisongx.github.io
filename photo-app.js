@@ -29,10 +29,10 @@ const images = [
 
     // col2
     { src: "images/photography-compressed/IMG_6022.JPG", alt: "IMG_6022.JPG" }, //sylvie pi
-    { src: "images/photography-compressed/IMG_2655.JPG", alt: "IMG_2655.JPG" },
+    // { src: "images/photography-compressed/IMG_2655.JPG", alt: "IMG_2655.JPG" }, //fdoc
     { src: "images/photography-compressed/IMG_2974.JPG", alt: "IMG_2974.JPG" },
     { src: "images/photography-compressed/IMG_2985.JPG", alt: "IMG_2985.JPG" },
-    { src: "images/photography-compressed/IMG_3021.JPG", alt: "IMG_3021.JPG" },
+    // { src: "images/photography-compressed/IMG_3021.JPG", alt: "IMG_3021.JPG" }, //andygrad
     { src: "images/photography-compressed/IMG_3038.JPG", alt: "IMG_3038.JPG" },
     { src: "images/photography-compressed/IMG_3071.JPG", alt: "IMG_3071.JPG" },
     { src: "images/photography-compressed/IMG_3086.JPG", alt: "IMG_3086.JPG" },
@@ -68,7 +68,7 @@ const images = [
     { src: "images/photography-compressed/IMG_9862.JPG", alt: "IMG_9862.JPG" },
     { src: "images/photography-compressed/IMG_9867.JPG", alt: "IMG_9867.JPG" },
     { src: "images/photography-compressed/IMG_9887.JPG", alt: "IMG_9887.JPG" },
-    { src: "images/photography-compressed/IMG_9894.JPG", alt: "IMG_9894.JPG" },
+    // { src: "images/photography-compressed/IMG_9894.JPG", alt: "IMG_9894.JPG" }, //rocks in hand
     { src: "images/photography-compressed/IMG_9897.JPG", alt: "IMG_9897.JPG" },
     { src: "images/photography-compressed/IMG_9898.JPG", alt: "IMG_9898.JPG" },
     { src: "images/photography-compressed/IMG_9901.JPG", alt: "IMG_9901.JPG" },
@@ -115,12 +115,12 @@ const COLOR_MAP = {
   'IMG_2974.JPG': 'red',   'IMG_2985.JPG': 'red',   'IMG_3078.JPG': 'red',
   'IMG_3150.JPG': 'red',   'IMG_9897.JPG': 'red',   'IMG_9904.JPG': 'red',
 
-  'IMG_0572.JPG': 'black', 'IMG_0650.JPG': 'black', 'IMG_2640.JPG': 'black',
+  'IMG_0572.JPG': 'black', 'IMG_0650.JPG': 'black', 'IMG_2640.JPG': 'white',
   'IMG_2645.JPG': 'black', 'IMG_3021.JPG': 'black', 'IMG_3071.JPG': 'black',
-  'IMG_3100.JPG': 'black', 'IMG_4214.JPG': 'black', 'IMG_5160.JPG': 'black',
+  'IMG_3100.JPG': 'red', 'IMG_4214.JPG': 'black', 'IMG_5160.JPG': 'black',
   'IMG_5172.JPG': 'black', 'IMG_6022.JPG': 'black', 'IMG_9894.JPG': 'black',
   'IMG_2637.JPG': 'black',
-  'IMG_2643.JPG': 'black',
+  'IMG_2643.JPG': 'blue',
   'IMG_3490.JPG': 'black',
   'IMG_5135.JPG': 'black',
   'IMG_9893.JPG': 'black',
@@ -144,7 +144,7 @@ const COLOR_MAP = {
   'IMG_2651.JPG': 'blue', 'IMG_3087.JPG': 'blue',
 
   'IMG_0871.JPG': 'green', 'IMG_0876.JPG': 'green', 'IMG_0877.JPG': 'green',
-  'IMG_0888.JPG': 'green', 'IMG_2623.JPG': 'yellow', 'IMG_2635.JPG': 'yellow',
+  'IMG_0888.JPG': 'green', 'IMG_2623.JPG': 'yellow', 'IMG_2635.JPG': 'green',
   'IMG_2655.JPG': 'green', 'IMG_3117.JPG': 'green', 'IMG_3175.JPG': 'green',
   'IMG_3177.JPG': 'green', 'IMG_3527.JPG': 'green', 'IMG_3528.JPG': 'green',
   'IMG_4219.JPG': 'green', 'IMG_4221.JPG': 'green', 'IMG_4226.JPG': 'green',
@@ -154,9 +154,9 @@ const COLOR_MAP = {
   'IMG_3024.JPG': 'green', 'IMG_9802.JPG': 'green',
 
   'IMG_0847.JPG': 'yellow', 'IMG_2619.JPG': 'yellow', 'IMG_2629.JPG': 'yellow',
-  'IMG_3121.JPG': 'yellow', 'IMG_6033.JPG': 'yellow', 'IMG_9906.JPG': 'yellow',
+  'IMG_3121.JPG': 'red', 'IMG_6033.JPG': 'yellow', 'IMG_9906.JPG': 'yellow',
   'R1-08627-0022.JPG': 'yellow', 'R1-08629-013A.JPG': 'yellow',
-  'IMG_2653.JPG': 'yellow', 'IMG_4203.JPG': 'yellow',
+  'IMG_2653.JPG': 'white', 'IMG_4203.JPG': 'yellow',
 };
 
 // ── build gallery items from a list of image objects ──
