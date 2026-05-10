@@ -1,14 +1,21 @@
 const images = [
+    // col1
     { src: "images/photography-compressed/IMG_3078.JPG", alt: "IMG_3078.JPG" },
     { src: "images/photography-compressed/IMG_0642.JPG", alt: "IMG_0642.JPG" },
     { src: "images/photography-compressed/IMG_0650.JPG", alt: "IMG_0650.JPG" },
+    { src: "images/photography-compressed/IMG_2684.JPG", alt: "IMG_2684.JPG" },
+    { src: "images/photography-compressed/IMG_0871.JPG", alt: "IMG_0871.JPG" }, //esthergreen
+    { src: "images/photography-compressed/IMG_3024.JPG", alt: "IMG_3024.JPG" }, //snooki and boxer
+    { src: "images/photography-compressed/R1-08628-0026.JPG", alt: "R1-08628-0026.JPG" },
+    { src: "images/photography-compressed/IMG_4203.JPG", alt: "IMG_4203.JPG" },
     { src: "images/photography-compressed/IMG_0692.JPG", alt: "IMG_0692.JPG" },
     { src: "images/photography-compressed/IMG_0847.JPG", alt: "IMG_0847.JPG" },
     { src: "images/photography-compressed/IMG_0854.JPG", alt: "IMG_0854.JPG" },
-    { src: "images/photography-compressed/IMG_0871.JPG", alt: "IMG_0871.JPG" },
     { src: "images/photography-compressed/IMG_0875.JPG", alt: "IMG_0875.JPG" },
     { src: "images/photography-compressed/IMG_0876.JPG", alt: "IMG_0876.JPG" },
     { src: "images/photography-compressed/IMG_0877.JPG", alt: "IMG_0877.JPG" },
+    { src: "images/photography-compressed/R1-08628-0004.JPG", alt: "R1-08628-0004.JPG" }, //lands end super blue
+    { src: "images/photography-compressed/IMG_2651.JPG", alt: "IMG_2651.JPG" },
     // { src: "images/photography-compressed/IMG_0881.JPG", alt: "IMG_0881.JPG" },
     { src: "images/photography-compressed/IMG_0888.JPG", alt: "IMG_0888.JPG" },
     { src: "images/photography-compressed/IMG_0906.JPG", alt: "IMG_0906.JPG" },
@@ -16,15 +23,16 @@ const images = [
     { src: "images/photography-compressed/IMG_2622.JPG", alt: "IMG_2622.JPG" },
     { src: "images/photography-compressed/IMG_2623.JPG", alt: "IMG_2623.JPG" },
     { src: "images/photography-compressed/IMG_2629.JPG", alt: "IMG_2629.JPG" },
-    { src: "images/photography-compressed/IMG_2635.JPG", alt: "IMG_2635.JPG" },
+    { src: "images/photography-compressed/IMG_2647.JPG", alt: "IMG_2647.JPG" },
     { src: "images/photography-compressed/IMG_2640.JPG", alt: "IMG_2640.JPG" },
     { src: "images/photography-compressed/IMG_2645.JPG", alt: "IMG_2645.JPG" },
-    { src: "images/photography-compressed/IMG_2647.JPG", alt: "IMG_2647.JPG" },
+
+    // col2
+    { src: "images/photography-compressed/IMG_6022.JPG", alt: "IMG_6022.JPG" }, //sylvie pi
     { src: "images/photography-compressed/IMG_2655.JPG", alt: "IMG_2655.JPG" },
     { src: "images/photography-compressed/IMG_2974.JPG", alt: "IMG_2974.JPG" },
     { src: "images/photography-compressed/IMG_2985.JPG", alt: "IMG_2985.JPG" },
     { src: "images/photography-compressed/IMG_3021.JPG", alt: "IMG_3021.JPG" },
-    { src: "images/photography-compressed/IMG_3027.JPG", alt: "IMG_3027.JPG" },
     { src: "images/photography-compressed/IMG_3038.JPG", alt: "IMG_3038.JPG" },
     { src: "images/photography-compressed/IMG_3071.JPG", alt: "IMG_3071.JPG" },
     { src: "images/photography-compressed/IMG_3086.JPG", alt: "IMG_3086.JPG" },
@@ -38,7 +46,7 @@ const images = [
     { src: "images/photography-compressed/IMG_3175.JPG", alt: "IMG_3175.JPG" },
     { src: "images/photography-compressed/IMG_3177.JPG", alt: "IMG_3177.JPG" },
     { src: "images/photography-compressed/IMG_3527.JPG", alt: "IMG_3527.JPG" },
-    { src: "images/photography-compressed/IMG_3528.JPG", alt: "IMG_3528.JPG" },
+    // { src: "images/photography-compressed/IMG_3528.JPG", alt: "IMG_3528.JPG" }, //henry guilin field left
     { src: "images/photography-compressed/IMG_4201.JPG", alt: "IMG_4201.JPG" },
     { src: "images/photography-compressed/IMG_4214.JPG", alt: "IMG_4214.JPG" },
     { src: "images/photography-compressed/IMG_4219.JPG", alt: "IMG_4219.JPG" },
@@ -47,11 +55,13 @@ const images = [
     { src: "images/photography-compressed/IMG_4227.JPG", alt: "IMG_4227.JPG" },
     { src: "images/photography-compressed/IMG_4229.JPG", alt: "IMG_4229.JPG" },
     { src: "images/photography-compressed/IMG_4298.JPG", alt: "IMG_4298.JPG" },
-    { src: "images/photography-compressed/IMG_4299.JPG", alt: "IMG_4299.JPG" },
     { src: "images/photography-compressed/IMG_5122.JPG", alt: "IMG_5122.JPG" },
+    { src: "images/photography-compressed/IMG_4299.JPG", alt: "IMG_4299.JPG" },
+
+    // col3
+    { src: "images/photography-compressed/R1-08628-0005.JPG", alt: "R1-08628-0005.JPG" }, //lands end goat
     { src: "images/photography-compressed/IMG_5160.JPG", alt: "IMG_5160.JPG" },
     { src: "images/photography-compressed/IMG_5172.JPG", alt: "IMG_5172.JPG" },
-    { src: "images/photography-compressed/IMG_6022.JPG", alt: "IMG_6022.JPG" },
     { src: "images/photography-compressed/IMG_6033.JPG", alt: "IMG_6033.JPG" },
     { src: "images/photography-compressed/IMG_6054.JPG", alt: "IMG_6054.JPG" },
     { src: "images/photography-compressed/IMG_9859.JPG", alt: "IMG_9859.JPG" },
@@ -65,6 +75,10 @@ const images = [
     { src: "images/photography-compressed/IMG_9904.JPG", alt: "IMG_9904.JPG" },
     { src: "images/photography-compressed/IMG_9906.JPG", alt: "IMG_9906.JPG" },
     { src: "images/photography-compressed/IMG_0637.JPG", alt: "IMG_0637.JPG" },
+
+    // col4
+    { src: "images/photography-compressed/IMG_2635.JPG", alt: "IMG_2635.JPG" }, //arrantree
+    { src: "images/photography-compressed/IMG_3027.JPG", alt: "IMG_3027.JPG" },
     { src: "images/photography-compressed/IMG_0572.JPG", alt: "IMG_0572.JPG" },
     { src: "images/photography-compressed/R1-08627-0005.JPG", alt: "R1-08627-0005.JPG" },
     { src: "images/photography-compressed/R1-08627-0022.JPG", alt: "R1-08627-0022.JPG" },
@@ -76,13 +90,22 @@ const images = [
     { src: "images/photography-compressed/R1-08627-0036.JPG", alt: "R1-08627-0036.JPG" },
     { src: "images/photography-compressed/R1-08628-0002.JPG", alt: "R1-08628-0002.JPG" },
     { src: "images/photography-compressed/R1-08628-0003.JPG", alt: "R1-08628-0003.JPG" },
-    { src: "images/photography-compressed/R1-08628-0004.JPG", alt: "R1-08628-0004.JPG" },
-    { src: "images/photography-compressed/R1-08628-0005.JPG", alt: "R1-08628-0005.JPG" },
     { src: "images/photography-compressed/R1-08628-0028.JPG", alt: "R1-08628-0028.JPG" },
     { src: "images/photography-compressed/R1-08629-008A.JPG", alt: "R1-08629-008A.JPG" },
     { src: "images/photography-compressed/R1-08629-013A.JPG", alt: "R1-08629-013A.JPG" },
     { src: "images/photography-compressed/R1-08629-016A.JPG", alt: "R1-08629-016A.JPG" },
     { src: "images/photography-compressed/R1-08629-019A.JPG", alt: "R1-08629-019A.JPG" },
+
+    { src: "images/photography-compressed/IMG_2637.JPG", alt: "IMG_2637.JPG" },
+    { src: "images/photography-compressed/IMG_3087.JPG", alt: "IMG_3087.JPG" },
+    { src: "images/photography-compressed/IMG_9802.JPG", alt: "IMG_9802.JPG" },
+    { src: "images/photography-compressed/IMG_3490.JPG", alt: "IMG_3490.JPG" },
+    { src: "images/photography-compressed/IMG_2653.JPG", alt: "IMG_2653.JPG" },
+    { src: "images/photography-compressed/IMG_2643.JPG", alt: "IMG_2643.JPG" },
+    { src: "images/photography-compressed/IMG_9893.JPG", alt: "IMG_9893.JPG" },
+    { src: "images/photography-compressed/IMG_5135.JPG", alt: "IMG_5135.JPG" },
+    { src: "images/photography-compressed/IMG_2977.JPG", alt: "IMG_2977.JPG" },
+    { src: "images/photography-compressed/R1-08629-020A.JPG", alt: "R1-08629-020A.JPG" },
 
 ];
 
@@ -96,32 +119,44 @@ const COLOR_MAP = {
   'IMG_2645.JPG': 'black', 'IMG_3021.JPG': 'black', 'IMG_3071.JPG': 'black',
   'IMG_3100.JPG': 'black', 'IMG_4214.JPG': 'black', 'IMG_5160.JPG': 'black',
   'IMG_5172.JPG': 'black', 'IMG_6022.JPG': 'black', 'IMG_9894.JPG': 'black',
+  'IMG_2637.JPG': 'black',
+  'IMG_2643.JPG': 'black',
+  'IMG_3490.JPG': 'black',
+  'IMG_5135.JPG': 'black',
+  'IMG_9893.JPG': 'black',
+  'R1-08628-0026.JPG': 'black',
 
-  'IMG_0692.JPG': 'white', 'IMG_0854.JPG': 'white', 'IMG_2622.JPG': 'white',
+  'IMG_0692.JPG': 'white', 'IMG_0854.JPG': 'black', 'IMG_2622.JPG': 'white',
   'IMG_2647.JPG': 'white', 'IMG_3038.JPG': 'white', 'IMG_3157.JPG': 'white',
   'IMG_5122.JPG': 'white', 'IMG_6054.JPG': 'white', 'IMG_9862.JPG': 'white',
   'R1-08627-0028.JPG': 'white', 'R1-08627-0032.JPG': 'white',
   'R1-08627-0033.JPG': 'white', 'R1-08627-0034.JPG': 'white',
-  'R1-08627-0035.JPG': 'white', 'R1-08627-0036.JPG': 'white',
+  'R1-08627-0035.JPG': 'yellow', 'R1-08627-0036.JPG': 'white',
+  'IMG_2684.JPG': 'white',
+  'IMG_2977.JPG': 'white',
+  'R1-08629-020A.JPG': 'white',
 
-  'R1-08628-0005.JPG': 'blue',  'IMG_3027.JPG': 'blue',  'IMG_3086.JPG': 'blue',
+  'IMG_0637.JPG': 'blue',  'IMG_3027.JPG': 'blue',  'IMG_3086.JPG': 'blue',
   'IMG_4201.JPG': 'blue',  'IMG_4229.JPG': 'blue',  'IMG_4298.JPG': 'blue',
   'IMG_4299.JPG': 'blue',  'IMG_9859.JPG': 'blue',  'IMG_9887.JPG': 'blue',
-  'IMG_9901.JPG': 'blue',  'R1-08628-0002.JPG': 'blue', 'R1-08628-0003.JPG': 'blue', 'IMG_0637.JPG': 'blue',
-  'R1-08628-0004.JPG': 'blue', 'R1-08629-008A.JPG': 'blue',
+  'IMG_9901.JPG': 'blue',  'R1-08628-0002.JPG': 'blue', 'R1-08628-0003.JPG': 'blue',
+  'R1-08628-0004.JPG': 'blue', 'R1-08628-0005.JPG': 'blue', 'R1-08629-008A.JPG': 'blue',
+  'IMG_2651.JPG': 'blue', 'IMG_3087.JPG': 'blue',
 
   'IMG_0871.JPG': 'green', 'IMG_0876.JPG': 'green', 'IMG_0877.JPG': 'green',
-  'IMG_0888.JPG': 'green', 'IMG_2623.JPG': 'green', 'IMG_2635.JPG': 'green',
+  'IMG_0888.JPG': 'green', 'IMG_2623.JPG': 'yellow', 'IMG_2635.JPG': 'yellow',
   'IMG_2655.JPG': 'green', 'IMG_3117.JPG': 'green', 'IMG_3175.JPG': 'green',
   'IMG_3177.JPG': 'green', 'IMG_3527.JPG': 'green', 'IMG_3528.JPG': 'green',
   'IMG_4219.JPG': 'green', 'IMG_4221.JPG': 'green', 'IMG_4226.JPG': 'green',
   'IMG_4227.JPG': 'green', 'IMG_9867.JPG': 'green', 'IMG_9898.JPG': 'green',
   'R1-08627-0005.JPG': 'green', 'R1-08628-0028.JPG': 'green',
   'R1-08629-016A.JPG': 'green', 'R1-08629-019A.JPG': 'green',
+  'IMG_3024.JPG': 'green', 'IMG_9802.JPG': 'green',
 
   'IMG_0847.JPG': 'yellow', 'IMG_2619.JPG': 'yellow', 'IMG_2629.JPG': 'yellow',
   'IMG_3121.JPG': 'yellow', 'IMG_6033.JPG': 'yellow', 'IMG_9906.JPG': 'yellow',
   'R1-08627-0022.JPG': 'yellow', 'R1-08629-013A.JPG': 'yellow',
+  'IMG_2653.JPG': 'yellow', 'IMG_4203.JPG': 'yellow',
 };
 
 // ── build gallery items from a list of image objects ──
@@ -237,12 +272,3 @@ document.querySelectorAll('.zone').forEach(btn => {
     filterGallery(color);
   });
 });
-
-// const FOLDERS = {
-//   red:    ['IMG_0642.JPG', 'IMG_0875.JPG', 'IMG_0906.JPG', 'IMG_2974.JPG', 'IMG_2985.JPG', 'IMG_3078.JPG', 'IMG_3150.JPG', 'IMG_9897.JPG', 'IMG_9904.JPG'],
-//   black:  ['IMG_0572.JPG', 'IMG_0650.JPG', 'IMG_2640.JPG', 'IMG_2645.JPG', 'IMG_3021.JPG', 'IMG_3071.JPG', 'IMG_3100.JPG', 'IMG_4214.JPG', 'IMG_5160.JPG', 'IMG_5172.JPG', 'IMG_6022.JPG', 'IMG_9894.JPG'],
-//   white:  ['IMG_0692.JPG', 'IMG_0854.JPG', 'IMG_2622.JPG', 'IMG_2647.JPG', 'IMG_3038.JPG', 'IMG_3157.JPG', 'IMG_5122.JPG', 'IMG_6054.JPG', 'IMG_9862.JPG', 'R1-08627-0028.JPG', 'R1-08627-0032.JPG', 'R1-08627-0033.JPG', 'R1-08627-0034.JPG', 'R1-08627-0035.JPG', 'R1-08627-0036.JPG'],
-//   blue:   ['IMG_0637.JPG', 'IMG_3027.JPG', 'IMG_3086.JPG', 'IMG_4201.JPG', 'IMG_4229.JPG', 'IMG_4298.JPG', 'IMG_4299.JPG', 'IMG_9859.JPG', 'IMG_9887.JPG', 'IMG_9901.JPG', 'R1-08628-0002.JPG', 'R1-08628-0003.JPG', 'R1-08628-0004.JPG', 'R1-08628-0005.JPG', 'R1-08629-008A.JPG'],
-//   green:  ['IMG_0871.JPG', 'IMG_0876.JPG', 'IMG_0877.JPG', 'IMG_0881.JPG', 'IMG_0888.JPG', 'IMG_2623.JPG', 'IMG_2635.JPG', 'IMG_2655.JPG', 'IMG_3117.JPG', 'IMG_3175.JPG', 'IMG_3177.JPG', 'IMG_3527.JPG', 'IMG_3528.JPG', 'IMG_4219.JPG', 'IMG_4221.JPG', 'IMG_4226.JPG', 'IMG_4227.JPG', 'IMG_9867.JPG', 'IMG_9898.JPG', 'R1-08627-0005.JPG', 'R1-08628-0028.JPG', 'R1-08629-016A.JPG', 'R1-08629-019A.JPG'],
-//   yellow: ['IMG_0847.JPG', 'IMG_2619.JPG', 'IMG_2629.JPG', 'IMG_3121.JPG', 'IMG_6033.JPG', 'IMG_9906.JPG', 'R1-08627-0022.JPG', 'R1-08629-013A.JPG'],
-// };
