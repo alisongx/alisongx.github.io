@@ -11,7 +11,8 @@ body {
 h1 {
     font-family: Helvetica;
     font-size: 2.5rem;
-    margin: 1em 0;
+    margin: 0rem;
+    padding: 2rem 0 1rem 0;
     font-weight: normal;
     text-align: center;
     color: inherit;
@@ -400,6 +401,21 @@ main {
   object-fit: cover;
   pointer-events: none;
   user-select: none;
+}
+
+.photo-link-zone {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 90.5%;
+  z-index: 2;
+  cursor: pointer;
+  text-decoration: none;
+
+}
+.photo-link-zone:hover {
+  background: rgba(255,255,255,0.03);
 }
 
 .color-zones {

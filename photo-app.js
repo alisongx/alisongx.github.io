@@ -8,7 +8,7 @@ const images = [
     { src: "images/photography-compressed/IMG_3024.JPG", alt: "IMG_3024.JPG" }, //snooki and boxer
     { src: "images/photography-compressed/R1-08628-0026.JPG", alt: "R1-08628-0026.JPG" },
     { src: "images/photography-compressed/IMG_4203.JPG", alt: "IMG_4203.JPG" },
-    { src: "images/photography-compressed/IMG_0692.JPG", alt: "IMG_0692.JPG" },
+    // { src: "images/photography-compressed/IMG_0692.JPG", alt: "IMG_0692.JPG" },
     { src: "images/photography-compressed/IMG_0847.JPG", alt: "IMG_0847.JPG" },
     { src: "images/photography-compressed/IMG_0854.JPG", alt: "IMG_0854.JPG" },
     { src: "images/photography-compressed/IMG_0875.JPG", alt: "IMG_0875.JPG" },
@@ -60,7 +60,7 @@ const images = [
 
     // col3
     { src: "images/photography-compressed/R1-08628-0005.JPG", alt: "R1-08628-0005.JPG" }, //lands end goat
-    { src: "images/photography-compressed/IMG_5160.JPG", alt: "IMG_5160.JPG" },
+    // { src: "images/photography-compressed/IMG_5160.JPG", alt: "IMG_5160.JPG" }, //ida sproul
     { src: "images/photography-compressed/IMG_5172.JPG", alt: "IMG_5172.JPG" },
     { src: "images/photography-compressed/IMG_6033.JPG", alt: "IMG_6033.JPG" },
     { src: "images/photography-compressed/IMG_6054.JPG", alt: "IMG_6054.JPG" },
@@ -89,7 +89,7 @@ const images = [
     { src: "images/photography-compressed/R1-08627-0035.JPG", alt: "R1-08627-0035.JPG" },
     { src: "images/photography-compressed/R1-08627-0036.JPG", alt: "R1-08627-0036.JPG" },
     { src: "images/photography-compressed/R1-08628-0002.JPG", alt: "R1-08628-0002.JPG" },
-    { src: "images/photography-compressed/R1-08628-0003.JPG", alt: "R1-08628-0003.JPG" },
+    // { src: "images/photography-compressed/R1-08628-0003.JPG", alt: "R1-08628-0003.JPG" }, //lands end kyla likes
     { src: "images/photography-compressed/R1-08628-0028.JPG", alt: "R1-08628-0028.JPG" },
     { src: "images/photography-compressed/R1-08629-008A.JPG", alt: "R1-08629-008A.JPG" },
     { src: "images/photography-compressed/R1-08629-013A.JPG", alt: "R1-08629-013A.JPG" },
@@ -141,7 +141,7 @@ const COLOR_MAP = {
   'IMG_4299.JPG': 'blue',  'IMG_9859.JPG': 'blue',  'IMG_9887.JPG': 'blue',
   'IMG_9901.JPG': 'blue',  'R1-08628-0002.JPG': 'blue', 'R1-08628-0003.JPG': 'blue',
   'R1-08628-0004.JPG': 'blue', 'R1-08628-0005.JPG': 'blue', 'R1-08629-008A.JPG': 'blue',
-  'IMG_2651.JPG': 'blue', 'IMG_3087.JPG': 'blue',
+  'IMG_2651.JPG': 'green', 'IMG_3087.JPG': 'blue',
 
   'IMG_0871.JPG': 'green', 'IMG_0876.JPG': 'green', 'IMG_0877.JPG': 'green',
   'IMG_0888.JPG': 'green', 'IMG_2623.JPG': 'yellow', 'IMG_2635.JPG': 'green',
