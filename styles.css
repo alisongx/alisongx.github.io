@@ -231,14 +231,14 @@ main {
 
 @media (hover: hover) and (pointer: fine) {
   .swap-on-hover:hover {
-    content: url('images/square-many-alison.gif');
+    content: url('images/manyalison/square-manyalison-v3.gif');
   }
 }
 
 @media (hover: none) and (pointer: coarse) {
   .swap-on-hover:active,
   .swap-on-hover:focus {
-    content: url('images/square-many-alison.gif');
+    content: url('images/manyalison/square-manyalison-v3.gif');
   }
 }
 
