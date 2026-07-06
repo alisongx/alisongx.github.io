@@ -510,12 +510,10 @@ main {
 
 .cover-grid {
     display: grid;
-    align-self: center;
-    justify-self: center;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     width: 90%;
-    margin-bottom: 2rem;
+    margin: 0 auto 2rem auto;
 }
 .cover-grid img {
     width: 100%;
@@ -526,8 +524,6 @@ main {
 @media (max-width: 700px) {
     .cover-grid {
         grid-template-columns: 1fr;
-        align-self: center;
-        justify-self: center;
     }
 }
 

@@ -5,7 +5,7 @@ function renderGallery(containerSelector, images) {
     images.forEach((image, i) => {
         const item = document.createElement('div');
         item.className = 'gallery-item';
-        item.dataset.delay = (i % 2) * 80;
+        item.dataset.delay = (i % 3) * 80;
         item.innerHTML = `<img src="${image.src}" alt="${image.alt}" loading="lazy">`;
         gallery.appendChild(item);
     });
@@ -41,15 +41,12 @@ const galleryImagesBARE = [
     { src: "images/editorial/bare compressed/i36 ideal woman 2.jpg", alt: "i36 Ideal Woman 2" },
     { src: "images/editorial/bare compressed/i36 orange fig.jpg", alt: "i36 Orange Fig" },
 
-    // { src: "images/editorial/bare compressed/i36 cover.jpg", alt: "i36 Cover" },
+    //misc
     { src: "images/editorial/bare compressed/i34 missed reflection 1.jpg", alt: "i34 Missed Reflection 1" },
     // { src: "images/editorial/bare compressed/i34 missed reflection 2.jpg", alt: "i34 Missed Reflection 2" },
-    
     { src: "images/editorial/bare compressed/i34 nature.jpg", alt: "i34 Nature" },
-
     { src: "images/editorial/bare compressed/perpghood.jpg", alt: "Perpghood" },
     { src: "images/editorial/bare compressed/eotwawki.jpg", alt: "Eotwawki" },
-    // { src: "images/editorial/bare compressed/i35 cover.jpg", alt: "i35 Cover" },
 ];
 
 renderGallery('#gallery-bpr', galleryImagesBPR);
