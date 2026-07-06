@@ -259,6 +259,13 @@ main {
     padding: 0 1.5rem;
 }
 
+.portfolio-gallery-editorial {
+    display: block;
+    columns: 3;
+    column-gap: 20px;
+    padding: 0 1.5rem;
+}
+
 .gallery-item {
     break-inside: avoid;
     margin-bottom: 24px;
@@ -296,6 +303,14 @@ main {
         padding: 0 0.75rem;
     }
     .gallery-item-photo {
+        margin-bottom: 10px;
+    }
+    .portfolio-gallery-editorial {
+        columns: 2;
+        column-gap: 10px;
+        padding: 0 0.75rem;
+    }
+    .gallery-item {
         margin-bottom: 10px;
     }
 }
@@ -507,17 +522,12 @@ main {
     display: block;
 }
 
-.portfolio-gallery-editorial {
-    display: block;
-    columns: 3;
-    column-gap: 20px;
-    padding: 0 1.5rem;
-}
-
 
 @media (max-width: 700px) {
     .cover-grid {
         grid-template-columns: 1fr;
+        align-self: center;
+        justify-self: center;
     }
 }
 
