@@ -282,7 +282,7 @@ main {
 
 @media (max-width: 768px) {
     .portfolio-gallery {
-        columns: 1;
+        columns: 2;
         column-gap: 10px;
         padding: 0 0.75rem;
     }
@@ -480,6 +480,7 @@ main {
    ==================================================================== */
 .img-grid {
     display: grid;
+    columns: 3;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     padding: 20px;
@@ -490,4 +491,39 @@ main {
   height: 100%; 
   object-fit: cover; 
   /* border-radius: 8px; */
+}
+
+.cover-grid {
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    width: 90%;
+    margin-bottom: 2rem;
+}
+.cover-grid img {
+    width: 100%;
+    display: block;
+}
+
+.portfolio-gallery-editorial {
+    display: block;
+    columns: 3;
+    column-gap: 20px;
+    padding: 0 1.5rem;
+}
+
+
+@media (max-width: 700px) {
+    .cover-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.section-divider {
+    border: none;
+    border-top: 1px solid currentColor;
+    opacity: 0.2;
+    margin: 3rem 0;
 }

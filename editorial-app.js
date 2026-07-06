@@ -1,4 +1,17 @@
-const images = [
+function renderGallery(containerSelector, images) {
+    const gallery = document.querySelector(containerSelector);
+    if (!gallery) return;
+
+    images.forEach((image, i) => {
+        const item = document.createElement('div');
+        item.className = 'gallery-item';
+        item.dataset.delay = (i % 2) * 80;
+        item.innerHTML = `<img src="${image.src}" alt="${image.alt}" loading="lazy">`;
+        gallery.appendChild(item);
+    });
+}
+
+const galleryImagesBPR = [
     { src: "images/editorial/sq flight to the right.jpeg", alt: "Square Flight to the Right" },
     { src: "images/editorial/fresno.jpeg", alt: "Fresno" },
     { src: "images/editorial/french_facade_half.jpg", alt: "French Facade" },
@@ -6,26 +19,41 @@ const images = [
     { src: "images/editorial/newsom_mamdani_half.jpg", alt: "Newsom Mamdani Half" },
     { src: "images/editorial/la_redistrict.jpg", alt: "LA Redistrict" },
     { src: "images/editorial/gorbachev.jpeg", alt: "Gorbachev" },
-    // { src: "images/editorial/bpr fall 25abc_28-29.jpg", alt: "BPR Fall 25abc, 28-29" },
-    // { src: "images/editorial/flight_right_full.jpg", alt: "Flight Right Full" },
-    // { src: "images/editorial/newsom_mamdani_full.jpg", alt: "Newsom Mamdani Full" },
-    // { src: "images/editorial/bpr backlog_32-33.jpg", alt: "BPR Backlog, 32-33" },
     { src: "images/editorial/bpr backlog_28-29.jpg", alt: "BPR Backlog, 28-29" },
     { src: "images/editorial/stoning_full.jpg", alt: "Stoning Full" },
-    // { src: "images/editorial/Screenshot 2026-06-17 at 2.12.25 PM.png", alt: "Screenshot 2.12.25 PM" },
-    // { src: "images/editorial/BPR SP26 Cover.png", alt: "BPR SP26 Cover" },
-    // { src: "images/editorial/BPR FA25 Cover.jpg", alt: "BPR FA25 Cover" },
 ];
 
-const gallery = document.querySelector('.portfolio-gallery');
+const galleryImagesBARE = [
+    // i35
+    { src: "images/editorial/bare compressed/i35 masthead.jpg", alt: "i35 Masthead" },
+    { src: "images/editorial/bare compressed/i35 exec.jpg", alt: "i35 Exec" },
+    { src: "images/editorial/bare compressed/i35 yellow.jpg", alt: "i35 Yellow" },
+    { src: "images/editorial/bare compressed/i35 handwritten.jpg", alt: "i35 Handwritten" },
 
-images.forEach((image, i) => {
-    const item = document.createElement('div');
-    item.className = 'gallery-item';
-    item.dataset.delay = (i % 3) * 80;
-    item.innerHTML = `<img src="${image.src}" alt="${image.alt}" loading="lazy">`;
-    gallery.appendChild(item);
-});
+    //i36
+    { src: "images/editorial/bare compressed/i36 toc.jpg", alt: "i36 TOC" },
+    { src: "images/editorial/bare compressed/i36 exec.jpg", alt: "i36 Exec" },
+
+    { src: "images/editorial/bare compressed/i36 apple 1.jpg", alt: "i36 Apple 1" },
+    { src: "images/editorial/bare compressed/i36 apple 2.jpg", alt: "i36 Apple 2" },
+    { src: "images/editorial/bare compressed/i36 apple collage.jpg", alt: "i36 Apple Collage" },
+    { src: "images/editorial/bare compressed/i36 ideal woman 1.jpg", alt: "i36 Ideal Woman 1" },
+    { src: "images/editorial/bare compressed/i36 ideal woman 2.jpg", alt: "i36 Ideal Woman 2" },
+    { src: "images/editorial/bare compressed/i36 orange fig.jpg", alt: "i36 Orange Fig" },
+
+    // { src: "images/editorial/bare compressed/i36 cover.jpg", alt: "i36 Cover" },
+    { src: "images/editorial/bare compressed/i34 missed reflection 1.jpg", alt: "i34 Missed Reflection 1" },
+    // { src: "images/editorial/bare compressed/i34 missed reflection 2.jpg", alt: "i34 Missed Reflection 2" },
+    
+    { src: "images/editorial/bare compressed/i34 nature.jpg", alt: "i34 Nature" },
+
+    { src: "images/editorial/bare compressed/perpghood.jpg", alt: "Perpghood" },
+    { src: "images/editorial/bare compressed/eotwawki.jpg", alt: "Eotwawki" },
+    // { src: "images/editorial/bare compressed/i35 cover.jpg", alt: "i35 Cover" },
+];
+
+renderGallery('#gallery-bpr', galleryImagesBPR);
+renderGallery('#gallery-bare', galleryImagesBARE);
 
 // ── scroll anim ──────────────────────────────────────────────────
 window.addEventListener('load', () => {
