@@ -5,14 +5,14 @@ const images = [
     { src: "images/compressed/arranma-thumb.jpg",       alt: "ArranMa, 2025" },
     { src: "images/compressed/emma-thumb.JPG",       alt: "Emma Color Study, 2022" },
     { src: "images/compressed/peach-thumb.jpg",       alt: "Color Study B, 2023" },
-    { src: "images/compressed/kirtapink-1-thumb.jpeg",       alt: "Kirtana Expression 1, 2025" },
-    { src: "images/compressed/kirtapink-2-thumb.jpeg",       alt: "Kirtana Expression 2, 2025" },
+    { src: "images/compressed/kirtapink-1-thumb.jpeg",       alt: "Kirtana Expression I, 2025" },
+    { src: "images/compressed/kirtapink-2-thumb.jpeg",       alt: "Kirtana Expression II, 2025" },
     { src: "images/olga.jpg",       alt: "Olga Color Study, 2022" },
-    { src: "images/compressed/blue-chickens.jpeg",       alt: "Blue tri-chickens sketch" },
+    { src: "images/compressed/blue-chickens.jpeg",       alt: "Blue Tri-chickens, 2026" },
     
     // { src: "images/crowbird figure.png",       alt: "Crowbird figure" },
     { src: "images/compressed/paperdoll-kyla-thumb.jpg",alt: "Kyla in Out of Our Minds, 2024" },
-    { src: "images/compressed/hometown-thumb.JPG",       alt: "Hometown Twice Removed, 20" },
+    { src: "images/compressed/hometown-thumb.JPG",       alt: "Hometown Twice Removed, 2021" },
     { src: "images/compressed/innout-darker40-thumb.png",       alt: "In-N-Out, 2025" },
     // { src: "images/compressed/sylvie-trad.jpg",       alt: "Acrylic Sylvie" },
     { src: "images/compressed/arranvie-trad.png",       alt: "Acrylic Arran and Sylvie" },
@@ -30,6 +30,7 @@ images.forEach((image, i) => {
     item.className = 'gallery-item';
     item.dataset.delay = (i % 3) * 80;
     item.innerHTML = `<img src="${image.src}" alt="${image.alt}" loading="lazy">`;
+    item.addEventListener('click', () => openLightbox(image.src, image.alt));
     gallery.appendChild(item);
 });
 
@@ -60,3 +61,33 @@ window.addEventListener('load', () => {
         }
     });
 });
+
+// ── Lightbox ──────────────────────────────────────────────────
+const lightbox = document.createElement('div');
+lightbox.id = 'lightbox';
+lightbox.innerHTML = `
+    <div id="lightbox-backdrop"></div>
+    <div id="lightbox-content">
+        <button id="lightbox-close" aria-label="Close">&times;</button>
+        <img id="lightbox-img" src="" alt="">
+        <p id="lightbox-caption"></p>
+    </div>
+`;
+document.body.appendChild(lightbox);
+ 
+function openLightbox(src, alt) {
+    document.getElementById('lightbox-img').src = src;
+    document.getElementById('lightbox-img').alt = alt;
+    document.getElementById('lightbox-caption').textContent = alt;
+    lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden'; // prevent scroll while open
+}
+ 
+function closeLightbox() {
+    lightbox.classList.remove('open');
+    document.body.style.overflow = '';
+}
+ 
+document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+document.getElementById('lightbox-backdrop').addEventListener('click', closeLightbox);
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });

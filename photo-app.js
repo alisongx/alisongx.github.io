@@ -213,6 +213,7 @@ function renderItems(list) {
     const dims = DIMS[filename];
     const sizeAttrs = dims ? ` width="${dims[0]}" height="${dims[1]}"` : '';
     item.innerHTML = `<img src="${image.src}" alt="${image.alt}"${sizeAttrs} loading="lazy">`;
+    item.addEventListener('click', () => openLightbox(image.src, image.alt));
     gallery.appendChild(item);
   });
   requestAnimationFrame(observeItems);
@@ -274,3 +275,33 @@ document.querySelectorAll('.zone').forEach(btn => {
     filterGallery(color);
   });
 });
+
+// ── Lightbox ──────────────────────────────────────────────────
+const lightbox = document.createElement('div');
+lightbox.id = 'lightbox';
+lightbox.innerHTML = `
+    <div id="lightbox-backdrop"></div>
+    <div id="lightbox-content">
+        <button id="lightbox-close" aria-label="Close">&times;</button>
+        <img id="lightbox-img" src="" alt="">
+        <p id="lightbox-caption"></p>
+    </div>
+`;
+document.body.appendChild(lightbox);
+ 
+function openLightbox(src, alt) {
+    document.getElementById('lightbox-img').src = src;
+    document.getElementById('lightbox-img').alt = alt;
+    // document.getElementById('lightbox-caption').textContent = alt;
+    lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden'; // prevent scroll while open
+}
+ 
+function closeLightbox() {
+    lightbox.classList.remove('open');
+    document.body.style.overflow = '';
+}
+ 
+document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+document.getElementById('lightbox-backdrop').addEventListener('click', closeLightbox);
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
