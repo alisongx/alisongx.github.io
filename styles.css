@@ -460,6 +460,7 @@ main {
 .cover-grid img {
     width: 100%;
     display: block;
+    cursor: pointer;
 }
 
 
@@ -476,11 +477,7 @@ main {
     margin: 3rem 0;
 }
 
-/* here i go TRYING SOMEITHNIGN NEEWJBHUYIHEFG -radius: 8px; */
-
 .cover {
-    /* max-width: 400px;
-    max-height: 400px; */
     width: 100%;
     height: auto;
 }
@@ -488,13 +485,11 @@ main {
 .cover-stack {
     position: relative;
     display: inline-block;
-    /* max-width: 400px;      */
 }
 
 .cover-stack .cover{
     display: block;
-    /* max-width: 400px;
-    max-height: 400px; */
+
     width: 100%;
     height: auto;
 }
@@ -541,7 +536,7 @@ main {
     }
 }
 
-.headshot-stack.is-active .hover-img {
+.cover-stack.is-active .hover-img {
     opacity: 1;
 }
 

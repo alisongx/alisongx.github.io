@@ -110,3 +110,10 @@ function closeLightbox() {
 document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
 document.getElementById('lightbox-backdrop').addEventListener('click', closeLightbox);
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+document.querySelectorAll('.cover-stack').forEach(stack => {
+    stack.addEventListener('click', () => {
+        const base = stack.querySelector('.base-img');
+        if (base) openLightbox(base.src, base.alt);
+    });
+});
