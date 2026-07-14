@@ -111,9 +111,21 @@ document.getElementById('lightbox-close').addEventListener('click', closeLightbo
 document.getElementById('lightbox-backdrop').addEventListener('click', closeLightbox);
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
 
+const isTouch = window.matchMedia('(hover: none) and (pointer: coarse)').matches;
+
 document.querySelectorAll('.cover-stack').forEach(stack => {
     stack.addEventListener('click', () => {
         const base = stack.querySelector('.base-img');
+
+        if (isTouch) {
+            if (!stack.classList.contains('is-active')) {
+                // first tap: reveal the gif, don't open lightbox yet
+                stack.classList.add('is-active');
+                return;
+            }
+            // second tap: already showing gif, now open lightbox
+        }
+
         if (base) openLightbox(base.src, base.alt);
     });
 });

@@ -463,7 +463,6 @@ main {
     cursor: pointer;
 }
 
-
 @media (max-width: 700px) {
     .cover-grid {
         grid-template-columns: 1fr;
@@ -484,12 +483,12 @@ main {
 
 .cover-stack {
     position: relative;
-    display: inline-block;
+    display: block;
+    width: 100%;
 }
 
 .cover-stack .cover{
     display: block;
-
     width: 100%;
     height: auto;
 }
