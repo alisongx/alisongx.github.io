@@ -476,6 +476,75 @@ main {
     margin: 3rem 0;
 }
 
+/* here i go TRYING SOMEITHNIGN NEEWJBHUYIHEFG -radius: 8px; */
+
+.cover {
+    /* max-width: 400px;
+    max-height: 400px; */
+    width: 100%;
+    height: auto;
+}
+
+.cover-stack {
+    position: relative;
+    display: inline-block;
+    /* max-width: 400px;      */
+}
+
+.cover-stack .cover{
+    display: block;
+    /* max-width: 400px;
+    max-height: 400px; */
+    width: 100%;
+    height: auto;
+}
+
+.hover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0s ease;
+}
+
+.desktop-only {
+    display: block;
+}
+
+.mobile-only {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .cover {
+        max-width: 300px;
+    }
+    .desktop-only {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .mobile-only {
+        display: none;
+    }
+}
+
+.image-text-row {
+    display: flex;
+    align-items: center;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .cover-stack:hover .hover-img {
+        opacity: 1;
+    }
+}
+
+.headshot-stack.is-active .hover-img {
+    opacity: 1;
+}
+
 
 /* ====================================================================
     LIGHTBOX
