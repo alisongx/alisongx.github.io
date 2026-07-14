@@ -186,9 +186,25 @@ main {
 }
 
 .headshot-stack {
-  position: relative;
-  display: inline-block;
-  max-width: 400px;     
+    position: relative;
+    display: inline-block;
+    max-width: 400px;     
+}
+
+.headshot-stack .headshot{
+    display: block;
+    max-width: 400px;
+    max-height: 400px;
+    width: 100%;
+    height: auto;
+}
+
+.hover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity;
 }
 
 .about-text {
@@ -204,7 +220,7 @@ main {
 }
 
 .desktop-only {
-  display: block;
+    display: block;
 }
 
 @media (max-width: 768px) {
@@ -225,21 +241,14 @@ main {
     align-items: center;
 }
 
-.swap-on-hover {
-    transition: opacity 0.2s ease;
-}
-
 @media (hover: hover) and (pointer: fine) {
-  .swap-on-hover:hover {
-    content: url('images/manyalison/square-manyalison-v3.gif');
-  }
+    .headshot-stack:hover .hover-img {
+        opacity: 1;
+    }
 }
 
-@media (hover: none) and (pointer: coarse) {
-  .swap-on-hover:active,
-  .swap-on-hover:focus {
-    content: url('images/manyalison/square-manyalison-v3.gif');
-  }
+.headshot-stack.is-active .hover-img {
+    opacity: 1;
 }
 
 /* ====================================================================
@@ -394,7 +403,7 @@ main {
 }
 
 .zone:hover {
-  opacity: 0.78;
+  opacity: 0.7;
 }
 
 .zone:hover::after {

@@ -35,8 +35,9 @@
     <section>
         <div class="about-section">
             <div class="headshot-stack">
-            <!-- <img src="images/square-alison-gradbench.jpeg" alt="alison gradbench" class="headshot swap-on-hover"> -->
-            <img src="images/square-alisonmarina-bw.JPG" alt="alison gradbench" class="headshot swap-on-hover">
+            <img src="images/square-alison-gradbench.jpeg" alt="alison gradbench" class="headshot base-img">
+            <img src="images/square-alisonmarina-bw.JPG" alt="alison marina" class="headshot base-img">
+            <img src="images/manyalison/square-manyalison-v3.gif" alt="alison many" class="headshot hover-img">
             </div>
             <div class="about-text">
                 <p>Hi! I just graduated from UC Berkeley, where I studied History and Data Science. 
@@ -54,6 +55,20 @@
         <!-- <a href="mailto:alisonxiong@berkeley.edu"> <img src="images/mailto.png"> </a><br><br> -->
         <small>&copy; 2026 Alison Xiong. All rights reserved.</small>
     </footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const isTouch = window.matchMedia('(hover: none) and (pointer: coarse)').matches;
+    if (!isTouch) return; // desktop: do nothing, hover CSS handles it
+
+    document.querySelectorAll('.headshot-stack').forEach(stack => {
+        stack.addEventListener('click', () => {
+            stack.classList.toggle('is-active');
+        });
+    });
+});
+</script>
+
 
 </body>
 </html>
