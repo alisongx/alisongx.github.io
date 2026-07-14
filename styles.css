@@ -502,14 +502,6 @@ main {
     transition: opacity 0s ease;
 }
 
-.desktop-only {
-    display: block;
-}
-
-.mobile-only {
-    display: block;
-}
-
 @media (max-width: 768x) {
     .cover {
         max-width: 300px;
@@ -518,14 +510,6 @@ main {
         max-width: 300px;
         margin: 0 auto;
     }
-    .desktop-only {
-        display: none;
-    }
-}
-
-.image-text-row {
-    display: flex;
-    align-items: center;
 }
 
 @media (hover: hover) and (pointer: fine) {
