@@ -14,7 +14,7 @@
     </style>
 </head>
 
-</body>
+<body>
     <header>
         <div class="title-container">
         <!-- <img src="/images/left-orangebirdheadscalesingular.png" alt="Left Icon" class="title-icon"> -->
@@ -59,7 +59,7 @@
 <script>
 document.addEventListener('DOMContentLoaded', () => {
     const isTouch = window.matchMedia('(hover: none) and (pointer: coarse)').matches;
-    if (!isTouch) return; // desktop: do nothing, hover CSS handles it
+    if (!isTouch) return;
 
     document.querySelectorAll('.headshot-stack').forEach(stack => {
         stack.addEventListener('click', () => {
@@ -68,7 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 </script>
-
 
 </body>
 </html>
