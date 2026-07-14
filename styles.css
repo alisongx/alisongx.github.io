@@ -215,11 +215,15 @@ main {
 
 .about-text p{
     text-align: left;
-    font-size: 1rem;
+    font-size: 0.9rem;
     line-height: 1.6;
 }
 
 .desktop-only {
+    display: block;
+}
+
+.mobile-only {
     display: block;
 }
 
@@ -232,6 +236,12 @@ main {
         max-width: 300px;
     }
     .desktop-only {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .mobile-only {
         display: none;
     }
 }
