@@ -13,41 +13,41 @@ function renderGallery(containerSelector, images) {
 }
 
 const galleryImagesBPR = [
-    { src: "images/editorial/sq flight to the right.jpeg", alt: "Square Flight to the Right" },
-    { src: "images/editorial/fresno.jpeg", alt: "Fresno" },
-    { src: "images/editorial/french_facade_half.jpg", alt: "French Facade" },
-    { src: "images/editorial/mission_spring.jpg", alt: "Mission Spring" },
-    { src: "images/editorial/newsom_mamdani_half.jpg", alt: "Newsom Mamdani Half" },
-    { src: "images/editorial/la_redistrict.jpg", alt: "LA Redistrict" },
-    { src: "images/editorial/gorbachev.jpeg", alt: "Gorbachev" },
-    { src: "images/editorial/bpr backlog_28-29.jpg", alt: "BPR Backlog, 28-29" },
-    { src: "images/editorial/stoning_full.jpg", alt: "Stoning Full" },
+    { src: "images/editorial/sq flight to the right.jpeg", alt: "Flight to the right: How democracts lost San Francisco Asian Americans. BPR Spring 2026 Issue." },
+    { src: "images/editorial/fresno.jpeg", alt: "Misfit Island: A Familial Lens on Fresno’s Battle Against the Homeless. BPR 2025 Backlog Issue." },
+    { src: "images/editorial/french_facade_half.jpg", alt: "Behind the Facade of French Colorblindness. BPR Fall 2025 Issue." },
+    { src: "images/editorial/mission_spring.jpg", alt: "Masthead, BPR Spring 2026." },
+    { src: "images/editorial/newsom_mamdani_half.jpg", alt: "What Newsom Doesn’t Get, Mamdani Does. BPR Fall 2025 Issue." },
+    { src: "images/editorial/la_redistrict.jpg", alt: "Is Los Angeles the Future of Redistricting? BPR Fall 2025 Issue." },
+    { src: "images/editorial/gorbachev.jpeg", alt: "Mr. Gorbachev, Did the Wall Actually Fall? BPR 2025 Backlog Issue." },
+    { src: "images/editorial/heirs_backlog.jpg", alt: "A World Without Heirs. BPR 2025 Backlog Issue." },
+    { src: "images/editorial/stoning_full.png", alt: "A Modest Proposal for the Return of Stoning as Moral Instruction. BPR 2025 Backlog Issue." },
 ];
 
 const galleryImagesBARE = [
     // i35
-    { src: "images/editorial/bare compressed/i35 masthead.jpg", alt: "i35 Masthead" },
-    { src: "images/editorial/bare compressed/i35 exec.jpg", alt: "i35 Exec" },
-    { src: "images/editorial/bare compressed/i35 yellow.jpg", alt: "i35 Yellow" },
-    { src: "images/editorial/bare compressed/i35 handwritten.jpg", alt: "i35 Handwritten" },
+    { src: "images/editorial/bare compressed/i35 masthead.jpg", alt: "i35: Rush Hour. Masthead" },
+    { src: "images/editorial/bare compressed/i35 exec.jpg", alt: "i35: Rush Hour. Exec" },
+    { src: "images/editorial/bare compressed/i35 yellow.jpg", alt: "i35" },
+    { src: "images/editorial/bare compressed/i35 handwritten.jpg", alt: "i35 To ___ From ___" },
 
     //i36
-    { src: "images/editorial/bare compressed/i36 toc.jpg", alt: "i36 TOC" },
-    { src: "images/editorial/bare compressed/i36 exec.jpg", alt: "i36 Exec" },
+    { src: "images/editorial/bare compressed/i36 toc.jpg", alt: "i36: Telephone. TOC" },
+    { src: "images/editorial/bare compressed/i36 exec.jpg", alt: "i36: Telephone. Exec" },
 
-    { src: "images/editorial/bare compressed/i36 apple 1.jpg", alt: "i36 Apple 1" },
-    { src: "images/editorial/bare compressed/i36 apple 2.jpg", alt: "i36 Apple 2" },
-    { src: "images/editorial/bare compressed/i36 apple collage.jpg", alt: "i36 Apple Collage" },
-    { src: "images/editorial/bare compressed/i36 ideal woman 1.jpg", alt: "i36 Ideal Woman 1" },
-    { src: "images/editorial/bare compressed/i36 ideal woman 2.jpg", alt: "i36 Ideal Woman 2" },
-    { src: "images/editorial/bare compressed/i36 orange fig.jpg", alt: "i36 Orange Fig" },
+    { src: "images/editorial/bare compressed/i36 apple 1.jpg", alt: "i36. Apple prints by Bayley Harris." },
+    { src: "images/editorial/bare compressed/i36 apple 2.jpg", alt: "i36. Apple prints by Bayley Harris." },
+    { src: "images/editorial/bare compressed/i36 apple collage.jpg", alt: "i36. Apple graphics by Bayley Harris." },
+    { src: "images/editorial/bare compressed/i36 ideal woman 1.jpg", alt: "i36 Ideal Woman I" },
+    { src: "images/editorial/bare compressed/i36 ideal woman 2.jpg", alt: "i36 Ideal Woman II" },
+    { src: "images/editorial/bare compressed/i36 orange fig.jpg", alt: "i36" },
 
     //misc
-    { src: "images/editorial/bare compressed/i34 missed reflection 1.jpg", alt: "i34 Missed Reflection 1" },
+    { src: "images/editorial/bare compressed/i34 missed reflection 1.jpg", alt: "i34" },
     // { src: "images/editorial/bare compressed/i34 missed reflection 2.jpg", alt: "i34 Missed Reflection 2" },
-    { src: "images/editorial/bare compressed/i34 nature.jpg", alt: "i34 Nature" },
-    { src: "images/editorial/bare compressed/perpghood.jpg", alt: "Perpghood" },
-    { src: "images/editorial/bare compressed/eotwawki.jpg", alt: "Eotwawki" },
+    { src: "images/editorial/bare compressed/i34 nature.jpg", alt: "i34" },
+    { src: "images/editorial/bare compressed/perpghood.jpg", alt: "i33" },
+    { src: "images/editorial/bare compressed/eotwawki.jpg", alt: "i33" },
 ];
 
 renderGallery('#gallery-bpr', galleryImagesBPR);
@@ -97,7 +97,7 @@ document.body.appendChild(lightbox);
 function openLightbox(src, alt) {
     document.getElementById('lightbox-img').src = src;
     document.getElementById('lightbox-img').alt = alt;
-    // document.getElementById('lightbox-caption').textContent = alt;
+    document.getElementById('lightbox-caption').textContent = alt;
     lightbox.classList.add('open');
     document.body.style.overflow = 'hidden'; // prevent scroll while open
 }
