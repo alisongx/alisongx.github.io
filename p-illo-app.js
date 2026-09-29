@@ -1,7 +1,7 @@
 const images = [
+    { src: "images/compressed/harpy.jpg",       alt: "Self Portrait, 2026" },
     { src: "images/compressed/getting-older-thumb.jpg", alt: "We're Getting Older, 2023" },
-    { src: "images/compressed/hdsleep-thumb.jpg",       alt: "Sleep on HD, 2024" },
-    { src: "images/compressed/pavlova-thumb.jpg",       alt: "Pavlova Ballerinas, 2024" },
+    { src: "images/edited-IMG_8811 2.jpg",       alt: "Color Study A, 2023" },
     { src: "images/compressed/arranma-thumb.jpg",       alt: "ArranMa, 2025" },
     { src: "images/compressed/emma-thumb.JPG",       alt: "Emma Color Study, 2022" },
     { src: "images/compressed/peach-thumb.jpg",       alt: "Color Study B, 2023" },
@@ -12,13 +12,14 @@ const images = [
     
     // { src: "images/crowbird figure.png",       alt: "Crowbird figure" },
     { src: "images/compressed/paperdoll-kyla-thumb.jpg",alt: "Kyla in Out of Our Minds, 2024" },
+    { src: "images/compressed/hdsleep-thumb.jpg",       alt: "Sleep on HD, 2024" },
+    { src: "images/compressed/pavlova-thumb.jpg",       alt: "Pavlova Ballerinas, 2024" },
     { src: "images/compressed/hometown-thumb.JPG",       alt: "Hometown Twice Removed, 2021" },
     { src: "images/compressed/innout-darker40-thumb.png",       alt: "In-N-Out, 2025" },
     // { src: "images/compressed/sylvie-trad.jpg",       alt: "Acrylic Sylvie" },
     { src: "images/compressed/arranvie-trad.png",       alt: "Acrylic Arran and Sylvie" },
     // { src: "images/compressed/arran-trad.jpg",       alt: "Acrylic Arran" },
     { src: "images/compressed/gardeners-thumb.JPG",       alt: "Gardener's Hands, 2022" },
-    { src: "images/edited-IMG_8811 2.jpg",       alt: "Color Study A, 2023" },
     { src: "images/compressed/leslie-willard-thumb.jpeg",       alt: "Leslie Sunning, 2025" },
 
 ];
