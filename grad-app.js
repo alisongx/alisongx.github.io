@@ -5,7 +5,7 @@ const images = [
     { src: "images/grad/2CE6FF3D-10DF-4E37-8CD8-9A442467244F.jpg", alt: "2CE6FF3D-10DF-4E37-8CD8-9A442467244F.jpg" },
     { src: "images/grad/2D4F9E7A-C546-48D5-A5B2-0D0AD308BFF0.jpg", alt: "2D4F9E7A-C546-48D5-A5B2-0D0AD308BFF0.jpg" },
     { src: "images/grad/2DF1D457-93C1-416B-955D-BAE2B821A394.jpg", alt: "2DF1D457-93C1-416B-955D-BAE2B821A394.jpg" },
-    { src: "images/grad/3FF61DBC-4D61-4FB7-9942-B210E28F7594.jpg", alt: "3FF61DBC-4D61-4FB7-9942-B210E28F7594.jpg" },
+    // { src: "images/grad/3FF61DBC-4D61-4FB7-9942-B210E28F7594.jpg", alt: "3FF61DBC-4D61-4FB7-9942-B210E28F7594.jpg" }, //chloe on stairs
     { src: "images/grad/7DA5001E-9E27-46E8-A464-0B986A0A33E5.jpg", alt: "7DA5001E-9E27-46E8-A464-0B986A0A33E5.jpg" },
     { src: "images/grad/000393290029.jpg", alt: "000393290029.jpg" },
     { src: "images/grad/000393290030.jpg", alt: "000393290030.jpg" },
@@ -106,7 +106,7 @@ document.body.appendChild(lightbox);
 function openLightbox(src, alt) {
     document.getElementById('lightbox-img').src = src;
     document.getElementById('lightbox-img').alt = alt;
-    document.getElementById('lightbox-caption').textContent = alt;
+    // document.getElementById('lightbox-caption').textContent = alt;
     lightbox.classList.add('open');
     document.body.style.overflow = 'hidden'; // prevent scroll while open
 }
