@@ -70,8 +70,6 @@ p {
     font-size: 1.2rem;
     line-height: 1.6;
     margin: 0;
-    /* font-family: Helvetica; */
-
 }
 
 @media (max-width: 768px) {
@@ -309,13 +307,10 @@ main {
     opacity: 0;
     transform: translateY(24px);
     transition: opacity 0.8s ease, transform 0.8s ease;
-    /* animation: fadeUp 0.8s ease forwards;
-    animation-play-state: paused; */
 }
 .gallery-item.visible {
     opacity: 1;
     transform: translateY(0);
-    /* animation-play-state: running; */
 }
 
 .gallery-item img {
