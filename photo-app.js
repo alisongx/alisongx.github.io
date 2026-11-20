@@ -1,5 +1,11 @@
 const images = [
     // col1
+    { src: "images/photography-compressed/007779700023.jpg", alt: "007779710023.jpg" },
+    { src: "images/photography-compressed/007779710030.jpg", alt: "007779710030.jpg" },
+    { src: "images/photography-compressed/002285900031.jpg", alt: "002285900031.jpg" },
+    // { src: "images/photography-compressed/007779700004.jpg", alt: "007779700004.jpg" },
+
+
     { src: "images/photography-compressed/IMG_3078.JPG", alt: "IMG_3078.JPG" },
     { src: "images/photography-compressed/IMG_0642.JPG", alt: "IMG_0642.JPG" },
     { src: "images/photography-compressed/IMG_0650.JPG", alt: "IMG_0650.JPG" },
@@ -11,6 +17,8 @@ const images = [
     // { src: "images/photography-compressed/IMG_0692.JPG", alt: "IMG_0692.JPG" },
     { src: "images/photography-compressed/IMG_0847.JPG", alt: "IMG_0847.JPG" },
     { src: "images/photography-compressed/IMG_0854.JPG", alt: "IMG_0854.JPG" },
+    { src: "images/photography-compressed/007779710027.jpg", alt: "007779710027.jpg" }, //cdmx
+    { src: "images/photography-compressed/007779710023.jpg", alt: "007779710023.jpg" }, //dance
     { src: "images/photography-compressed/IMG_0875.JPG", alt: "IMG_0875.JPG" },
     { src: "images/photography-compressed/IMG_0876.JPG", alt: "IMG_0876.JPG" },
     { src: "images/photography-compressed/IMG_0877.JPG", alt: "IMG_0877.JPG" },
@@ -18,17 +26,18 @@ const images = [
     { src: "images/photography-compressed/IMG_2651.JPG", alt: "IMG_2651.JPG" },
     // { src: "images/photography-compressed/IMG_0881.JPG", alt: "IMG_0881.JPG" },
     { src: "images/photography-compressed/IMG_0888.JPG", alt: "IMG_0888.JPG" },
+    { src: "images/photography-compressed/007779710036.jpg", alt: "007779710036.jpg" },
     { src: "images/photography-compressed/IMG_0906.JPG", alt: "IMG_0906.JPG" },
+    { src: "images/photography-compressed/IMG_6022.JPG", alt: "IMG_6022.JPG" }, //sylvie pi
+    { src: "images/photography-compressed/IMG_2623.JPG", alt: "IMG_2623.JPG" }, //chicken green
     { src: "images/photography-compressed/IMG_2619.JPG", alt: "IMG_2619.JPG" },
     { src: "images/photography-compressed/IMG_2622.JPG", alt: "IMG_2622.JPG" },
-    { src: "images/photography-compressed/IMG_2623.JPG", alt: "IMG_2623.JPG" },
     { src: "images/photography-compressed/IMG_2629.JPG", alt: "IMG_2629.JPG" },
     { src: "images/photography-compressed/IMG_2647.JPG", alt: "IMG_2647.JPG" },
     { src: "images/photography-compressed/IMG_2640.JPG", alt: "IMG_2640.JPG" },
     { src: "images/photography-compressed/IMG_2645.JPG", alt: "IMG_2645.JPG" },
 
     // col2
-    { src: "images/photography-compressed/IMG_6022.JPG", alt: "IMG_6022.JPG" }, //sylvie pi
     // { src: "images/photography-compressed/IMG_2655.JPG", alt: "IMG_2655.JPG" }, //fdoc
     { src: "images/photography-compressed/IMG_2974.JPG", alt: "IMG_2974.JPG" },
     { src: "images/photography-compressed/IMG_2985.JPG", alt: "IMG_2985.JPG" },
@@ -54,8 +63,8 @@ const images = [
     { src: "images/photography-compressed/IMG_4226.JPG", alt: "IMG_4226.JPG" },
     { src: "images/photography-compressed/IMG_4227.JPG", alt: "IMG_4227.JPG" },
     { src: "images/photography-compressed/IMG_4229.JPG", alt: "IMG_4229.JPG" },
-    { src: "images/photography-compressed/IMG_4298.JPG", alt: "IMG_4298.JPG" },
-    { src: "images/photography-compressed/IMG_5122.JPG", alt: "IMG_5122.JPG" },
+    // { src: "images/photography-compressed/IMG_4298.JPG", alt: "IMG_4298.JPG" }, //shark fin
+    // { src: "images/photography-compressed/IMG_5122.JPG", alt: "IMG_5122.JPG" },
     { src: "images/photography-compressed/IMG_4299.JPG", alt: "IMG_4299.JPG" },
 
     // col3
@@ -292,7 +301,7 @@ document.body.appendChild(lightbox);
 function openLightbox(src, alt) {
     document.getElementById('lightbox-img').src = src;
     document.getElementById('lightbox-img').alt = alt;
-    // document.getElementById('lightbox-caption').textContent = alt;
+    document.getElementById('lightbox-caption').textContent = alt;
     lightbox.classList.add('open');
     document.body.style.overflow = 'hidden'; // prevent scroll while open
 }
