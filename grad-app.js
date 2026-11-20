@@ -9,9 +9,9 @@ const images = [
     { src: "images/grad/7DA5001E-9E27-46E8-A464-0B986A0A33E5.jpg", alt: "7DA5001E-9E27-46E8-A464-0B986A0A33E5.jpg" },
     { src: "images/grad/000393290029.jpg", alt: "000393290029.jpg" },
     { src: "images/grad/000393290030.jpg", alt: "000393290030.jpg" },
-    { src: "images/grad/43AD652D-EC6F-4FBA-8AD0-BBC2A8778522.jpg", alt: "43AD652D-EC6F-4FBA-8AD0-BBC2A8778522.jpg" },
     { src: "images/grad/59BC12E2-9F4D-457B-A300-418D6499B689.jpg", alt: "59BC12E2-9F4D-457B-A300-418D6499B689.jpg" },
     { src: "images/grad/64DB4BAF-532A-4E6B-9BA9-B542567B7F8A.jpg", alt: "64DB4BAF-532A-4E6B-9BA9-B542567B7F8A.jpg" },
+    { src: "images/grad/43AD652D-EC6F-4FBA-8AD0-BBC2A8778522.jpg", alt: "43AD652D-EC6F-4FBA-8AD0-BBC2A8778522.jpg" },
     { src: "images/grad/98CA32B9-8A1F-44A0-B048-2D2D43E119DF.jpg", alt: "98CA32B9-8A1F-44A0-B048-2D2D43E119DF.jpg" },
     { src: "images/grad/251D4DFF-FEC9-43EF-BA4B-8F4B313000E3.jpg", alt: "251D4DFF-FEC9-43EF-BA4B-8F4B313000E3.jpg" },
     { src: "images/grad/0259D820-68EA-4F6F-8095-D5980DF00DC4.jpg", alt: "0259D820-68EA-4F6F-8095-D5980DF00DC4.jpg" },
@@ -34,7 +34,7 @@ const images = [
     { src: "images/grad/000393280016.jpg", alt: "000393280016.jpg" },
     { src: "images/grad/DC400B32-2518-4B3C-A913-D1A3E9BE305B.jpg", alt: "DC400B32-2518-4B3C-A913-D1A3E9BE305B.jpg" },
     { src: "images/grad/F14E8F49-1944-4EE3-BFFD-8B930D292BF4.jpg", alt: "F14E8F49-1944-4EE3-BFFD-8B930D292BF4.jpg" },
-    { src: "images/grad/FB78BA83-04B5-4C91-83AE-2CF4578D8235.jpg", alt: "FB78BA83-04B5-4C91-83AE-2CF4578D8235.jpg" },
+    // { src: "images/grad/FB78BA83-04B5-4C91-83AE-2CF4578D8235.jpg", alt: "FB78BA83-04B5-4C91-83AE-2CF4578D8235.jpg" }, //hadar sunset
     { src: "images/grad/000393280006.jpg", alt: "000393280006.jpg" },
     { src: "images/grad/000393280009.jpg", alt: "000393280009.jpg" },
     { src: "images/grad/000393280018.jpg", alt: "000393280018.jpg" },
@@ -106,7 +106,7 @@ document.body.appendChild(lightbox);
 function openLightbox(src, alt) {
     document.getElementById('lightbox-img').src = src;
     document.getElementById('lightbox-img').alt = alt;
-    // document.getElementById('lightbox-caption').textContent = alt;
+    document.getElementById('lightbox-caption').textContent = alt;
     lightbox.classList.add('open');
     document.body.style.overflow = 'hidden'; // prevent scroll while open
 }
