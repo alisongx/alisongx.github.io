@@ -301,7 +301,7 @@ document.body.appendChild(lightbox);
 function openLightbox(src, alt) {
     document.getElementById('lightbox-img').src = src;
     document.getElementById('lightbox-img').alt = alt;
-    document.getElementById('lightbox-caption').textContent = alt;
+    // document.getElementById('lightbox-caption').textContent = alt;
     lightbox.classList.add('open');
     document.body.style.overflow = 'hidden'; // prevent scroll while open
 }
